@@ -45,3 +45,15 @@ export const setLunch = async ({
     process.exit(1);
   }
 };
+
+export const setAway = async (): Promise<void> => {
+  try {
+    await webClient.users.setPresence({ presence: "away" });
+
+    console.log("Away status set");
+    process.exit(0);
+  } catch (error) {
+    console.error("Request failed:", error);
+    process.exit(1);
+  }
+};

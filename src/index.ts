@@ -1,7 +1,7 @@
 import "dotenv/config";
 
 import yargs from "yargs";
-import { setLunch } from "./commands";
+import { setLunch, setAway } from "./commands";
 
 const lunchMessage = process.env.LUNCH_MESSAGE;
 const lunchEmoji = process.env.LUNCH_SLACK_EMOJI;
@@ -28,4 +28,5 @@ yargs
         expirationInMs: parseInt(lunchExpirationInSeconds),
       }),
   )
+  .command("away", "Sets status to 'away'", setAway)
   .help().argv;
