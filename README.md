@@ -19,3 +19,9 @@ A small command line utility to update your status and presence in slack. It inc
 Open Spotlight on your Mac with `⌘ + Space` and search for one of the files in the `commands` folder
 
 > The first time you might need to write the full name of the .command file, i.e. `away.command`
+
+### Commands
+
+- `away.command` sets your presence status in slack to `away`
+- `coffee.command` sets your status in slack to `:coffee: Coffetime` for twenty minutes by default. Can be customized with the `COFFEE_*` variables in your `.env` file.
+- `lunch.command` sets your status in slack to `:chompy: Having lunch` for sixty minutes by default. Can be customized with the `LUNCH_*` variables in your `.env` file.
