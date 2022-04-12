@@ -9,7 +9,7 @@ interface LunchParams {
   expirationInMs: number;
 }
 
-export const setLunch = async ({
+export const setStatus = async ({
   text,
   emoji,
   expirationInMs,
@@ -30,7 +30,7 @@ export const setLunch = async ({
       const { status_text, status_emoji, status_expiration } = profile;
 
       console.log(
-        "Lunchtime status set to:",
+        "Status set to:",
         status_text,
         status_emoji,
         status_expiration && new Date(status_expiration * 1000),
