@@ -23,6 +23,7 @@
     "tsc:watch": "tsc --watch"
   },
   "dependencies": {
+    "@slack/bolt": "^3.11.0",
     "source-map-support": "^0.5.16"
   },
   "devDependencies": {
